@@ -11,22 +11,47 @@
 /*-----HEADER-----*/
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #ffffff00;
 }
 
-header nav{
-    display: flex;
-    background-color: #ffffff00;
-    justify-content: space-between;
-    align-items: center;
+.navbar-expand-lg .navbar-collapse {
+    justify-content: end;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding: 5px 20px;
+    font-family: 'Arima', cursive;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.accordion-body div img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+.accordion-item {
+    margin: 5px;
+}
+
+.accordion {
+    margin: 50px;
 }
 
 header img{
     width: 100px;
     height: 100px;
 }
+
+/*--
+
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
 
 header nav ul{
     list-style: none;
@@ -43,7 +68,7 @@ header nav ul li a{
     color: black;
     font-size: 20px;
 }
-
+--*/
 
 /*-----MAIN-----*/
 
@@ -392,14 +417,14 @@ header nav ul li a{
     margin-top: 10px;
 }
 
-.boton-masproductos{
-    display: flex;
-    margin: 20px;
-    padding: 10px;
+.boton-masproductos {
     background-color: #9fe867;
+    padding: 5px 20px;
     border-radius: 10px;
-    width: fit-content;
-    align-content: center;
+    margin-bottom: 30px;
+    color: black;
+    text-decoration: none;
+    
 }
 
 /*-----FOOTER-----*/
@@ -434,6 +459,11 @@ footer ul li{
     display: flex; 
 }
 
+.menu-footer li a{
+    color: #282828;
+    text-decoration: none;
+}
+
 
 /* MEDIA QUERIE*/
 
@@ -444,9 +474,6 @@ footer ul li{
 }
 
 @media screen and (max-width:936px) {
-    header{
-        flex-direction: column
-    }
     .mapa iframe{
         width: 800px;
     }
@@ -465,12 +492,6 @@ footer ul li{
 }
 
 @media screen and (max-width:834px) {
-    header nav{
-        height: auto;
-    }
-    header nav ul{
-        flex-direction: column
-    }
     .mapa iframe{
         width: 500px;
         height: 500px;

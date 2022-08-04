@@ -1,14 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/style.css">
-        <title>Todo Natural</title>
-    </head>
-    <body>
-        <header>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Todo Natural</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./img/logo.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/preguntasfrecuentes.html">Preguntas Frecuentes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 
             <img src="./img/logo.png" alt="">
             <nav>
                 <ul>
@@ -19,100 +52,105 @@
                     <li><a href="./pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section class="hero">
-                <div>
-                    <h1>Todo Natural</h1>
-                    <p>Productos cosméticos naturales</p>
-                </div>
-            </section>
-            <section class="categorias">
-                <h2>Categorías</h2>
-                <div>
-                    <ul> 
-                        <li><a href=""></a>Ofertas</li>
-                        <li><a href=""></a>Bambú</li>
-                        <li><a href=""></a>Higiene Dental</li>
-                        <li><a href=""></a>Cuidado Capilar</li>
-                        <li><a href=""></a>Cuidados de la piel</li>
-                        <li><a href=""></a>Cremas Faciales</li>
-                        <li><a href=""></a>Cremas</li>
-                    </ul> 
-                </div>
-            </section>
-            <section class="productos-destacados">
-                <h2>Productos Destacados</h2>
-                <div>
-                    <div>
-                        <img src="./img/producto1-cremadealmendras.jpg" alt="">
-                        <h3>Crema Facial De Almendras</h3>
-                        <p>$1.990</p>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="./img/producto2-shampusolido.jpg" alt="">
-                        <h3>Shampoo Sólido</h3>
-                        <p>$820</p>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="./img/producto3-cremahidratacionprofunda.png" alt="">
-                        <h3>Crema Hidratación Profunda Mango Y Jojoba</h3>
-                        <p>$1.690</p>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="./img/producto4-cepillodepelodebambu.jpg" alt="">
-                        <h3>Cepillo De Pelo De Bambú - Grande</h3>
-                        <p>$1.450</p>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="./img/producto1-cremadealmendras.jpg" alt="">
-                        <h3>Crema Facial De Almendras</h3>
-                        <p>$1.990</p>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="./img/producto2-shampusolido.jpg" alt="">
-                        <h3>Shampoo Sólido</h3>
-                        <p>$820</p>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="./img/producto3-cremahidratacionprofunda.png" alt="">
-                        <h3>Crema Hidratación Profunda Mango Y Jojoba</h3>
-                        <p>$1.690</p>
-                        <a href=""></a>
-                    </div>
-                    <div>
-                        <img src="./img/producto4-cepillodepelodebambu.jpg" alt="">
-                        <h3>Cepillo De Pelo De Bambú - Grande</h3>
-                        <p>$1.450</p>
-                        <a href=""></a>
-                    </div>
-                </div>
-                <div class="boton-masproductos">
-                    <a href="./pages/tienda.html">Ver más Productos</a>
-                </div>
-        </main>
-        <footer>
+            -->
+    </header>
+    <main>
+        <section class="hero">
             <div>
-                <div>
-                    <a href=""><img src="./img/icon-instagram.png" alt="" target="_blank"></a>
-                    <a href=""><img src="./img/icon-facebook.png" alt="" target="_blank"></a>
-                    <a href=""><img src="./img/icon-youtube.png" alt="" target="_blank"></a>
-                </div>
-                <img src="./img/logo.png" alt=""> 
+                <h1>Todo Natural</h1>
+                <p>Productos cosméticos naturales</p>
+            </div>
+        </section>
+        <section class="categorias">
+            <h2>Categorías</h2>
+            <div>
                 <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/tienda.html">Tienda</a></li>
-                    <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                    <li><a href="./pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href=""></a>Ofertas</li>
+                    <li><a href=""></a>Bambú</li>
+                    <li><a href=""></a>Higiene Dental</li>
+                    <li><a href=""></a>Cuidado Capilar</li>
+                    <li><a href=""></a>Cuidados de la piel</li>
+                    <li><a href=""></a>Cremas Faciales</li>
+                    <li><a href=""></a>Cremas</li>
                 </ul>
             </div>
-        </footer>
-    </body>
+        </section>
+        <section class="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div>
+                <div>
+                    <img src="./img/producto1-cremadealmendras.jpg" alt="">
+                    <h3>Crema Facial De Almendras</h3>
+                    <p>$1.990</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="./img/producto2-shampusolido.jpg" alt="">
+                    <h3>Shampoo Sólido</h3>
+                    <p>$820</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="./img/producto3-cremahidratacionprofunda.png" alt="">
+                    <h3>Crema Hidratación Profunda Mango Y Jojoba</h3>
+                    <p>$1.690</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="./img/producto4-cepillodepelodebambu.jpg" alt="">
+                    <h3>Cepillo De Pelo De Bambú - Grande</h3>
+                    <p>$1.450</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="./img/producto5-cremanutricionyprotecciondecacaoyargan.jpg" alt="">
+                    <h3>Crema Nutrición Y Protección De Cacao Y Argán</h3>
+                    <p>$1.690</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="./img/producto6-desmaquillantesreutilizables.jpg" alt="">
+                    <h3>Desmaquillantes Reutilizables</h3>
+                    <p>$1.690</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="./img/producto7-cepillosdedientesdebambu.jpg" alt="">
+                    <h3>Cepillo De Dientes De Bambú - Biodegradable</h3>
+                    <p>$350</p>
+                    <a href=""></a>
+                </div>
+                <div>
+                    <img src="./img/producto8-pastadedientesenpolvomentolada.jpg" alt="">
+                    <h3>Pasta De Dientes En Polvo - Mentolada</h3>
+                    <p>$710</p>
+                    <a href=""></a>
+                </div>
+            </div>
+            <div>
+                <a class="boton-masproductos" href="./pages/tienda.html">Ver más Productos</a>
+            </div>
+    </main>
+    <footer>
+        <div>
+            <div>
+                <a href=""><img src="./img/icon-instagram.png" alt="" target="_blank"></a>
+                <a href=""><img src="./img/icon-facebook.png" alt="" target="_blank"></a>
+                <a href=""><img src="./img/icon-youtube.png" alt="" target="_blank"></a>
+            </div>
+            <img src="./img/logo.png" alt="">
+            <ul class="menu-footer">
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/tienda.html">Tienda</a></li>
+                <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/preguntasfrecuentes.html">Preguntas Frecuentes</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
