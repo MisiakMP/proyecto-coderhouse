@@ -227,6 +227,12 @@ header nav ul li a{
     margin-top: 10px;
 }
 
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+    text-decoration: underline;
+    text-decoration-color: #9FE867;
+    color: black;
+}
+
 .contacto {
     display: flex;
     justify-content: space-evenly;
@@ -322,7 +328,7 @@ header nav ul li a{
 .categorias ul li{
     display: inline-block;
     padding: 5px 10px 5px 10px;
-    background-color: #9fe867;
+    background-image: linear-gradient(to bottom, #9fe867, #61BD66);
     margin: 0px 20px 20px 20px;
     border-radius: 10px;
 }
@@ -340,6 +346,15 @@ header nav ul li a{
     align-content: stretch;
 }
 
+.productos-destacados div div{
+    transition: 1.3s;
+} 
+
+.productos-destacados div div:hover{
+    transform: scale(1.1);
+}
+
+
 .tienda-productos > div{
     display: flex; flex-wrap: wrap; flex-direction: row;
     justify-content: space-around;
@@ -355,6 +370,11 @@ header nav ul li a{
     border-radius: 5px;
     margin: 40px 20px;
     box-shadow: 7px 7px 15px #d1d1d1; 
+    transition: 1.3s;
+}
+
+.tienda-productos div div:hover{
+    transform: scale(1.1);
 }
 
 .tienda-productos div div h3{
@@ -418,7 +438,7 @@ header nav ul li a{
 }
 
 .boton-masproductos {
-    background-color: #9fe867;
+    background-image: linear-gradient(to bottom, #9fe867, #61BD66);
     padding: 5px 20px;
     border-radius: 10px;
     margin-bottom: 30px;
@@ -442,6 +462,7 @@ footer > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0px 20px;
 }
 
 footer div a img{
