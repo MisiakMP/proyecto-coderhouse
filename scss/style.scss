@@ -1,13 +1,18 @@
-header{
-    background-color: #ffffff00;
-    img{
+@import "./components/header";
+@import "./components/footer";
+@import "./components/mediaquerie";
+
+header {
+    background-color: #ffffff;
+
+    img {
         width: 100px;
         height: 100px;
     }
 }
 
-main{
-    .hero{
+main {
+    .hero {
         background-image: url(../img/fondo-inicio.png);
         background-position: center;
         background-size: cover;
@@ -17,34 +22,37 @@ main{
         display: flex;
         justify-content: center;
         align-items: center;
-        div{
+        div {
             width: 80%;
-            h1{
+            h1 {
                 font-size: 50px;
                 font-weight: 300;
                 text-align: center;
                 font-family: 'Arima', cursive;
             }
-            p{
+            p {
                 text-align: center;
                 font-size: 20px;
                 font-family: 'Arima', cursive;
                 margin-top: 10px;
             }
         }
-        }
-    .categorias{
-        h2{
+    }
+
+    .categorias {
+        h2 {
             margin-top: 20px;
             margin-bottom: 20px;
             text-align: center;
             font-family: 'Arima', cursive;
         }
-        div{
+
+        div {
             display: flex;
             justify-content: space-evenly;
-            ul{
-                li{
+
+            ul {
+                li {
                     display: inline-block;
                     padding: 5px 10px 5px 10px;
                     background-image: linear-gradient(to bottom, #9fe867, #61BD66);
@@ -54,16 +62,95 @@ main{
             }
         }
     }
-    .productos-destacados{
-        h2{
+
+    .productos-destacados {
+        h2 {
             text-align: center;
             font-family: 'Arima', cursive;
             margin: 30px 0px 20px 0px;
         }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: stretch;
+
+            div {
+                width: 300px;
+                height: 420px;
+                border: 1px solid rgb(229, 229, 229);
+                text-align: center;
+                border-radius: 5px;
+                margin: 40px 20px;
+                box-shadow: 7px 7px 15px #d1d1d1;
+                flex-direction: column;
+                transition: 1.3s;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                h3 {
+                    font-family: 'Poppins', sans-serif;
+                    font-size: 16px;
+                    padding: 0px 5px 5px 0px;
+                    margin-top: 10px;
+                }
+
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    padding: 0px 5px 0px 5px;
+                    margin-top: 10px;
+                }
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                    border-radius: 0px 5px 0px 0px;
+                }
+            }
+        }
+
+        div {
+            .boton-masproductos {
+                background-image: linear-gradient(to bottom, #9fe867, #61BD66);
+                padding: 5px 20px;
+                border-radius: 10px;
+                margin-bottom: 30px;
+                color: black;
+                text-decoration: none;
+
+            }
+        }
+    }
+}
+
+main {
+    .hero-tienda {
+        background-image: url(../img/fondo-tienda.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 50px;
+            font-weight: 300;
+            text-align: center;
+            font-family: 'Arima', cursive;
+        }
+    }
+    .tienda-productos{
         div{
             display: flex; flex-wrap: wrap; flex-direction: row;
             justify-content: space-around;
             align-content: stretch;
+            margin-top: 50px;
             div{
                 width: 300px;
                 height: 420px;
@@ -72,21 +159,21 @@ main{
                 border-radius: 5px;
                 margin: 40px 20px;
                 box-shadow: 7px 7px 15px #d1d1d1; 
-                flex-direction: column;
                 transition: 1.3s;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
                 &:hover{
                     transform: scale(1.1);
                 }
                 h3{
                     font-family: 'Poppins', sans-serif;
                     font-size: 16px;
-                    padding: 0px 5px 5px 0px;
-                    margin-top: 10px;
+                    padding: 5px;
                 }
                 p{
                     font-family: 'Poppins', sans-serif;
-                    padding: 0px 5px 0px 5px;
-                    margin-top: 10px;
+                    padding: 5px;
                 }
                 img{
                     width: 300px;
@@ -95,46 +182,219 @@ main{
                 }
             }
         }
-        div{
-            .boton-masproductos {
-                background-image: linear-gradient(to bottom, #9fe867, #61BD66);
-                padding: 5px 20px;
-                border-radius: 10px;
-                margin-bottom: 30px;
-                color: black;
-                text-decoration: none;
-                
+    }
+}
+
+main {
+    .hero-sobrenosotros {
+        background-image: url(../img/fondo-sobrenosotros.png);
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h1{
+            font-size: 50px;
+            font-weight: 300;
+            text-align: center;
+            font-family: 'Arima', cursive;
+        }
+    }
+    .sobrenosotros-historia {
+        h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px;
+            font-size: 25px;
+            font-weight: 300;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 0px 80px 0px 80px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            img{
+                width: 500px;
+                height: 500px;
+                margin-top: 60px
+            }
+        }
+    }
+    .grid-galeria{
+        width: 100%;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 10px;
+        padding: 0px 200px;
+        .grid-item{
+            width: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
             }
         }
     }
 }
 
-footer{
+main {
+    .hero-contacto {
+        background-image: url(../img/fondo-contacto.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            width: 80%;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 300;
+            text-align: center;
+            font-family: 'Arima', cursive;
+        }
+    }
+    .contacto{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: top;
+        .datos-contacto{
+            display: flex;
+            justify-content: start;
+            div{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                div{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-direction: row;
+                    a{
+                        margin: 5px;
+                    }
+                    img{
+                        width: 35px;
+                        height: 35px;
+                    }
+                }
+                h3{
+                    font-size: 28px;
+                    font-weight: 300;
+                    text-align: left;
+                    font-family: 'Poppins', sans-serif;
+                    margin: 20px 20px 20px 0px;
+                }
+                h4{
+                    font-size: 20px;
+                    font-weight: 300;
+                    text-align: left;
+                    font-family: 'Poppins', sans-serif;
+                    margin: 10px 10px 10px 0px;
+                }
+                p{
+                    font-size: 16px;
+                    font-weight: 300;
+                    text-align: left;
+                    margin: 10px;
+                    font-family: 'Poppins', sans-serif;
+                }
+            }
+        }
+        .newsletter{
+            h3{
+                font-size: 28px;
+                font-weight: 300;
+                text-align: center;
+                font-family: 'Poppins', sans-serif;
+                margin: 20px 20px 20px 0px;
+            }
+            form{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+                font-family: 'Poppins', sans-serif;
+                div{
+                    div{
+                        margin: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .mapa{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+        iframe{
+            width: 1300px;
+        }
+    }
+}
+
+main {
+    .hero-preguntasfrecuentes {
+        background-image: url(../img/fondo-preguntasfrecuentes.png);
+        background-position: bottom;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+footer {
     background-color: #baba8b;
-    div{
+
+    div {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin: 0px 20px;
-        div{
-            a{
-                img{
+
+        div {
+            a {
+                margin: 0px 5px;
+
+                img {
                     width: 35px;
                     height: 35px;
                 }
             }
         }
-        img{
+
+        img {
             width: 100px;
             height: 100px;
         }
-        .menu-footer{
+
+        .menu-footer {
             display: flex;
             flex-direction: column;
-            li{
+
+            li {
                 margin: 5px;
                 display: flex;
-                a{
+
+                a {
                     color: #282828;
                     text-decoration: none;
                 }
@@ -143,7 +403,9 @@ footer{
     }
 }
 
-.navbar-expand-lg .navbar-nav .nav-link:hover{
+
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
     text-decoration: underline;
     text-decoration-color: #9FE867;
     color: black;

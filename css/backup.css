@@ -13,7 +13,7 @@
 /*header{
     background-color: #ffffff00;
 }*/
-
+/*
 .navbar-expand-lg .navbar-collapse {
     justify-content: end;
 }
@@ -36,7 +36,7 @@
 
 .accordion {
     margin: 50px;
-}
+}*/
 
 /*header img{
     width: 100px;
@@ -84,7 +84,7 @@ header nav ul li a{
     align-items: center;
 }*/
 
-.hero-tienda{
+/*.hero-tienda{
     background-image: url(../img/fondo-tienda.png);
     background-position: center;
     background-size: cover;
@@ -94,8 +94,8 @@ header nav ul li a{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
+}*/
+/*
 .hero-sobrenosotros{
     background-image: url(../img/fondo-sobrenosotros.png);
     background-position: top;
@@ -129,8 +129,8 @@ header nav ul li a{
     font-weight: 300;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-}
-
+}*/
+/*
 .sobrenosotros-historia div{
     display: flex;
     justify-content: center;
@@ -146,27 +146,15 @@ header nav ul li a{
     width: 500px;
     height: 500px;
     margin-top: 60px;
-}
+}*/
 
 /*.hero div{
     width: 80%;
 }*/
-
-.hero-tienda{
-    height: 500px;
-}
-
-.hero-sobrenosotros{
-    height: 500px;
-}
-
-.hero-contacto{
-    height: 500px;
-}
-
+/*
 .hero-contacto div{
     width: 80%;
-}
+}*/
 
 /*.hero h1{
     font-size: 50px;
@@ -174,22 +162,22 @@ header nav ul li a{
     text-align: center;
     font-family: 'Arima', cursive;
 }*/
-
+/*
 .hero-tienda h1{
     font-size: 50px;
     font-weight: 300;
     text-align: center;
     font-family: 'Arima', cursive;
-}
+}*/
 
-.hero-sobrenosotros h1{
+/*.hero-sobrenosotros h1{
     font-size: 50px;
     font-weight: 300;
     text-align: center;
     font-family: 'Arima', cursive;
-}
+}*/
 
-.grid-galeria{
+/*.grid-galeria{
     width: 100%;
     margin-top: 5%;
     display: grid;
@@ -203,22 +191,22 @@ header nav ul li a{
     width: 100%;
     height: 100%;
     object-fit: contain;
-}
+}*/
 
 /* Hola Edu, quiero hacer la galería más chica y centrarla en el medio, pero no me sale, intenté utilizar, text-aling y demás, pero tampoco me funciona */
 
 
-.grid-item{
+/*.grid-item{
     width: 100%;
-}
+}*/
 
 
-.hero-contacto h1{
+/*.hero-contacto h1{
     font-size: 50px;
     font-weight: 300;
     text-align: center;
     font-family: 'Arima', cursive;
-}
+}*/
 
 /*.hero p{
     text-align: center;
@@ -232,7 +220,7 @@ header nav ul li a{
     text-decoration-color: #9FE867;
     color: black;
 }*/
-
+/*
 .contacto {
     display: flex;
     justify-content: space-evenly;
@@ -288,8 +276,8 @@ header nav ul li a{
     text-align: left;
     margin: 10px;
     font-family: 'Poppins', sans-serif;
-}
-
+}*/
+/*
 .newsletter h3{
     font-size: 28px;
     font-weight: 300;
@@ -307,9 +295,9 @@ header nav ul li a{
 
 .newsletter form div div{
     margin: 5px;
-}
+}*/
 
-.mapa{
+/*.mapa{
     display: flex;
     width: 100%;
     justify-content: center;
@@ -318,7 +306,7 @@ header nav ul li a{
 
 .mapa iframe{
     width: 1300px;
-}
+}*/
 
 /*.categorias div{
     display: flex;
@@ -355,7 +343,7 @@ header nav ul li a{
 }*/
 
 
-.tienda-productos > div{
+/*.tienda-productos > div{
     display: flex; flex-wrap: wrap; flex-direction: row;
     justify-content: space-around;
     align-content: stretch;
@@ -386,7 +374,7 @@ header nav ul li a{
 .tienda-productos div div p{
     font-family: 'Poppins', sans-serif;
     padding: 5px;
-}
+}*/
 
 /*.productos-destacados h2{
     text-align: center;
@@ -423,11 +411,11 @@ header nav ul li a{
     border-radius: 0px 5px 0px 0px;
 }*/
 
-.tienda-productos div div img{
+/*.tienda-productos div div img{
     width: 300px;
     height: 300px;
     border-radius: 0px 5px 0px 0px;
-}
+}*/
 
 /*.boton-masproductos {
     background-image: linear-gradient(to bottom, #9fe867, #61BD66);
@@ -480,7 +468,7 @@ footer ul li{
 
 /* MEDIA QUERIE*/
 
-@media screen and (max-width:1326px) {
+/*@media screen and (max-width:1326px) {
     .mapa iframe{
         width: 1000px;
     }
@@ -530,4 +518,4 @@ footer ul li{
         width: 300px;
         height: 400px;
     }
-}
+}*/

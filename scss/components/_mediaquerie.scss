@@ -1,0 +1,58 @@
+
+@media screen and (max-width:1326px) {
+    .mapa iframe{
+        width: 1000px;
+    }
+}
+
+@media screen and (max-width:936px) {
+    .mapa iframe{
+        width: 800px;
+    }
+}
+
+@media screen and (max-width:878px) {
+    .contacto{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .datos-contacto div{
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:834px) {
+    .mapa iframe{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:630px) {
+    main .grid-galeria {
+        grid-template-columns: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    footer > div{
+        flex-direction: column;
+    }
+    footer div div{
+        margin: 15px 0px;
+    }
+    footer div img{
+        margin: 15px 0px;
+    }
+    footer div ul{
+        margin: 25px 0px 10px 0px;
+        flex-direction: column;
+    }
+    .mapa iframe{
+        width: 300px;
+        height: 400px;
+    }
+}
+
